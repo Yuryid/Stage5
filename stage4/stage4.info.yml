@@ -1,0 +1,9 @@
+name: Stage 4 Test
+description: Demonstrates module creation
+package: Custom
+
+type: module
+core: 8.x
+dependencies:
+  - drupal:block
+  - drupal:node

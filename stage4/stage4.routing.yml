@@ -1,0 +1,23 @@
+stage4.content:
+  path: '/stage4'
+  defaults:
+    _controller: '\Drupal\stage4\Controller\stage4Controller::content'
+    _title: 'Main Page'
+  requirements:
+    _permission: 'access content'
+
+stage4.404:
+  path: '/stage4_404'
+  defaults:
+    _controller: '\Drupal\stage4\Controller\stage404Controller::content'
+    _title: 'Error 404'
+  requirements:
+    _access: 'TRUE' 
+
+stage4.403:
+  path: '/stage4_403'
+  defaults:
+    _controller: '\Drupal\stage4\Controller\stage403Controller::content'
+    _title: 'Error 403'
+  requirements:
+    _access: 'TRUE' 
